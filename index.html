@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yixuan Wu</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  
+    <!-- Google Analytics tracking code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E01MYK6N92"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E01MYK6N92');
+  </script>
+
+  
+  </head>
+
+
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
+          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+   
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="self_wyx.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a> -->
+          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i> -->
+          <!-- </a> -->
+           <!--
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/Whocare0202" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/%E5%87%AF%E6%BA%90-%E8%83%A1-01295629b/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+           -->
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./re-cv-english-2023.12.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <!--
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
+          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+   
+
+        </div>
+      -->
+<style>        
+    .inline {
+      display: inline;
+    }
+
+    .red-text {
+      color: red;
+    }
+    
+    .blue-text {
+      color: blue;
+    }
+
+    .left-align {
+      float: left;
+    }
+
+    .right-align {
+      float: right;
+    }
+</style>
+
+
+
+
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <!-- <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p> -->
+            <h1 style="text-align: center;"> Yixuan Wu (Chloe)</h2>
+            <!-- <h2>张文逸</h3> -->
+            <!-- <p>Wenyi Zhang (Morty)</p> -->
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3>
+            <p class="w3-margin-top-2"> 
+<!--             Hi! I am a M.S. in ECE at the University of California, San Diego, advised by <a class="blue-text" href="http://xyzhang.ucsd.edu/">Prof. Xinyu Zhang</a>. 
+            Before that, I was a visiting student in the NetSAIL Lab & EECS at the University of California, Irvine, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi</a>.
+            I got the B.E. in Computer Engineering from The Chinese University of Hong Kong, Shenzhen. At CUHKSZ, I worked in INML Lab, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang</a>. 
+            My research interests lie at the intersection of computer systems, networking, satellite network, and machine learning.          -->
+            Hi! I am Yixuan Wu, a Ph.D. at Zhejiang University advised by <a class="blue-text" href="https://person.zju.edu.cn/en/wujian">Prof. Jian Wu</a> and <a class="blue-text" href="https://www3.nd.edu/~dchen/">Prof. Danny Ziyi Chen, IEEE Fellow</a>.
+            Before that, I was a visiting student at Yale University. And I got the B.S. in Zhejiang University. My research interests lie at the intersection of Multi-modal Learning, Computer Vision, and Medical Data.         
+          </div>
+
+          <!---EDUCATION SECTION-->
+          <div id="Education" class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EDUCATION</h3> 
+              <h4>Ph.D in Big Data Science, Zhejiang University.</h4>
+              <p>September 2021 - June 2026 (Expected)</p>
+              <h4>Visiting Student in Biostatistics, Yale University.</h4>
+              <p>June 2019 - September 2019 </p>
+              <h4>B.S. GPA: 3.8/4.0, Zhejiang University</h4>
+              <p>September 2017 - June 2021 </p>             
+          </div>
+
+
+
+
+          <div id="Project" class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PUBLICATION & PREPRINTS</h3> 
+              
+              <h4 class="inline red-text">[ICCV'23]</h4> <h5 class="inline"><strong>Advancing Referring Expression Segmentation Beyond Single
+                Image.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://openaccess.thecvf.com/content/ICCV2023/html/Wu_Advancing_Referring_Expression_Segmentation_Beyond_Single_Image_ICCV_2023_paper.html" target="_blank">link</a>
+              <h5><strong>Yixuan Wu</strong>, Zhao Zhang, Xie Chi, Feng Zhu, Rui Zhao.</h5>   
+           
+              <h4 class="inline red-text">[ACM MM'23 (Oral)]</h4> <h5 class="inline"><strong>GCL: Gradient-Guided Contrastive
+                Learning for Medical Image Segmentation with Multi-Perspective Meta Labels.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://dl.acm.org/doi/10.1145/3581783.3612113" target="_blank">link</a> 
+              <h5><strong>Yixuan Wu</strong>, Jintai Chen, Jiahuan Yan, Yiheng Zhu, Danny Z. Chen, Jian Wu.</h5>    
+
+              <h4 class="inline red-text">[MICCAI'22 (Oral)]</h4> <h5 class="inline"><strong>OneSeg: Self-learning and One-shot Learning based
+                Single-slice Annotation for 3D Medical Image Segmentation.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://dl.acm.org/doi/10.1007/978-3-031-16452-1_24" target="_blank">link</a> 
+              <h5><strong>Yixuan Wu</strong>, Bo Zheng, Jintai Chen, Danny Z. Chen, Jian Wu.</h5>
+              
+              <h4 class="inline red-text">[Neural Computing and Applications, 2023]</h4> <h5 class="inline"><strong>D-Former: A
+                U-shaped Dilated Transformer for 3D Medical Image Segmentation[J].</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://dl.acm.org/doi/10.1007/s00521-022-07859-1" target="_blank">link</a> 
+              <h5><strong>Yixuan Wu</strong>, Kuanlun Liao, Jintai Chen, Jinhong Wang, Danny Z. Chen, Honghao Gao, Jian Wu.</h5>            
+                    
+              <h4 class="inline red-text">[TPAMI (under review)]</h4> <h5 class="inline"><strong>Hulk: A Universal Knowledge Translator for Human-Centric Tasks.</strong> </h5>
+              <!--<a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://dl.acm.org/doi/10.1007/s00521-022-07859-1" target="_blank">link</a> -->
+              <h5>Yizhou Wang*, <strong>Yixuan Wu*</strong>, Shixiang Tang, Weizhen He, Xun Guo, Feng Zhu, Lei Bai, Rui Zhao, Jian Wu, Tong He,
+                Wanli Ouyang.</h5>
+              
+              <h4 class="inline red-text">[NeurIPS'23]</h4> <h5 class="inline"><strong>Described Object Detection: Liberating
+                Object Detection with Flexible Expressions.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://neurips.cc/virtual/2023/poster/73049" target="_blank">link</a> 
+              <h5>Chi Xie*, Zhao Zhang*, <strong>Yixuan Wu*</strong>, Feng Zhu, Rui Zhao, Shuang Liang</h5>
+
+              <h4 class="inline red-text">[AAAI'23]</h4> <h5 class="inline"><strong>T2G-Former: Organizing Tabular Features into
+                Relation Graphs Promotes Heterogeneous Feature Interaction.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://dl.acm.org/doi/10.1609/aaai.v37i9.26272" target="_blank">link</a> 
+              <h5> Jiahuan Yan*, Jintai Chen*, <strong>Yixuan Wu</strong>, Danny Z. Chen, Jian Wu.</h5>
+
+              <h4 class="inline red-text">[IJCAI'23]</h4> <h5 class="inline"><strong>MolHF: A
+                Hierarchical Normalizing Flow for Molecular Graph Generation.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://www.ijcai.org/proceedings/2023/0556.pdf" target="_blank">link</a> 
+              <h5> Yiheng Zhu, Zhenqiu Ouyang, Ben Liao, Jialu Wu, <strong>Yixuan Wu</strong>, Chang-Yu Hsieh, Tingjun Hou, Jian Wu.</h5>
+
+          </div>
+
+
+          <!--Experience SECTION-->
+          <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EXPERIENCES</h3>
+            
+<!--               <div class=""> -->
+<!--                 <h4 class="inline">Wireless Lab at UC San Diego</h4>  <p class="inline">----------------------------------------- Oct. 2023 - Present</p> -->
+<!--                 <ul class="w3-ul" style="font-weight: 300;"> -->
+<!--                  <li>Research Assistant, advised by <a class="blue-text" href="http://xyzhang.ucsd.edu/">Prof. Xinyu Zhang.</a></li> -->
+<!--                 </ul> -->
+<!--           </div> -->
+
+            
+<div>
+  <h4 class="inline">Shanghai AI Laboratory</h4>
+  <p class="inline">-------------------------------------------- April 2023 - Present</p>
+  <ul class="w3-ul" style="font-weight: 300;">
+    <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+    <li>Built relations with the online community</li> -->
+    <li>
+      <strong>Researcher on Human-Centric Vision-Language Foundation Model:</strong> 
+      <ul>
+        <li>
+          Developed an encoder-decoder-based large foundation model to unify various 2D and 3D vision-language human-centric tasks, e.g., pedestrian detection, human parsing, pedestrian attribute recognition, action recognition, person reID, pose estimation, and mesh recovery.
+        </li>
+        <li>
+          Establish an all-weather and multitask dataset and benchmark for human-centric foundation model of human-centric fine-grained recognition tasks.
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h4 class="inline">SenseTime Research</h4>
+  <p class="inline">------------------------------------------------- Sep. 2022 - March. 2023</p>
+  <ul class="w3-ul" style="font-weight: 300;">
+    <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+    <li>Built relations with the online community</li> -->
+    <li>
+      <strong>Researcher on Universal Vision-Language Model:</strong> 
+      <ul>
+        <li>
+          Created a multi-modal detection/segmentation dataset named D<sup>3</sup> with class names characterized by intricate and flexible
+long expressions (traditional dataset's class names are simple nouns instead).
+        </li>
+        <li>
+          Establish an all-weather and multitask dataset and benchmark for human-centric foundation model of human-centric fine-grained recognition tasks.
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h4 class="inline">IFLYTEK Research</h4>
+  <p class="inline">---------------------------------------------------- April 2021 - Sep 2021</p>
+  <ul class="w3-ul" style="font-weight: 300;">
+    <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+    <li>Built relations with the online community</li> -->
+    <li>
+      <strong>Vision Algorithm Engineer:</strong> 
+      <ul>
+        <li>
+          Deployed object detection algorithmic models to internal platforms, and maintained large-scale clusters of platforms.
+        </li>  
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h4 class="inline">DiDi Global Inc.</h4>
+  <p class="inline">-------------------------------------------------- Sep 2020 - March 2021</p>
+  <ul class="w3-ul" style="font-weight: 300;">
+    <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+    <li>Built relations with the online community</li> -->
+    <li>
+      <strong>Medical Data Analyst:</strong> 
+      <ul>
+        <li>
+          Used SQL for structural data operation, and Python for medical data mining and analysis, providing decision support for
+operating department.
+        </li>  
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+
+          <!-- RESUME -->
+          <!-- <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h3>
+            <div class="w3-container w3-margin-top-2 w3-cursive"> -->
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <!-- <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Community Manager at the Company-X</h4>
+                <p>September 2020 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li>
+                  <li>Implemented social media strategies to increase engagement and followers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Y</h4>
+                <p>January 2017 - June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that audience growth rate is in increase through social networs</li>
+                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
+                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Z</h4>
+                <p>January 2014 - April 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Organized and managed community events to boost brand awareness</li>
+                  <li>Monitored, tracked and reported on feedback and online reviews</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+              </div>
+            </div> -->
+
+
+
+            <!--SKILLS SECTION-->
+            <!-- <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">SKILLS</h3> -->
+              <!--SOFT SKILLS-->
+              <!-- <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excelent communication skill and confidence in front of an audience</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <!-- <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a great experience with MS Office tools</li>
+                  <li>I am proficient in technical writing</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+            </div> --> 
+
+
+
+
+              <!---Leadership-->
+              <div id="Education" class="w3-container w3-margin-top-2 w3-cursive">
+                <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+                <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Leadership</h3> 
+                  <h4>Dance Sports Association</h4>
+                  <p>President, Captain</p>
+                  <li>As the president, organized to hold monthly club activities, i.e., Christmas Dance Party, Sports-Dance Training, etc.</li>
+                  <li>As the captain of Latin Dance Team, led the team to participate in national competitions and had won the first prize.</li>         
+              </div>
+
+              <div id="Education" class="w3-container w3-margin-top-2 w3-cursive">
+                <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+                <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Skills</h3> 
+                  <h4><strong>English:</strong> TOEFL: 110, CET-6, CET-4</h4>
+                  <h4><strong>Programming:</strong> Python, Java, C, HTML/CSS, R, SAS, SPSS, SQL</h4>                           
+              </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Yixuan Wu (Chloe)</p>
+              <p>Address: No.866, Yuhangtang Road, Hangzhou, Zhejiang, China, 310058</p>
+              <p>E-mail: wyx_chloe@zju.edu.cn</p>
+            </div>
+          </div>
+<div style="text-align: center;">
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=h7iLFRCDGHEbTRSQRJkKlTs6pnyREar8MxhBmGCXWdA&cl=ffffff&w=a"></script>
+        <!-- 地图小部件代码结束 -->
+    </div>
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. --> 
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023.11 - Yixuan Wu</p>
+    
+          <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>  --> 
+        <!-- End footer --> 
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
